@@ -1,0 +1,21 @@
+body {
+    font-family: 'Playfair Display';
+}
+
+.recipes-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.recipes-container ul {
+    list-style: none;
+    flex: 0 0 33%;
+
+    height: 300px;
+    margin: 0;
+    padding: 0;
+}
