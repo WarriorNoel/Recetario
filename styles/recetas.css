@@ -1,21 +1,49 @@
 body {
     font-family: 'Playfair Display';
+    background-color: rgb(236, 233, 233);
 }
 
-.recipes-container {
+.recipes-parent {
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
     justify-content: center;
     align-items: center;
     text-align: center;
+    row-gap: 30px;
+    column-gap: 20px;
+    
 }
 
-.recipes-container ul {
+.recipes-child {
     list-style: none;
-    flex: 0 0 33%;
-
-    height: 300px;
+    flex: 0 0 30%;
+    font-size: 18px;
+    
+    width: 100%;
+    height: auto;
     margin: 0;
     padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.recipes-child ul {
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 26px;
+    color: rgb(151, 33, 33);
+    text-shadow: 2px 2px 20px rgba(151, 33, 33);
+}
+
+.recipes-child img {
+    width: 100%;
+    height: auto;
+}
+
+.recipes-child:nth-child(-n+3) {
+    margin-top: 20px;
 }

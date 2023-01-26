@@ -1,16 +1,78 @@
-/*Especial*/
+/*Special*/
 body{
-    font-family: 'Playfair Display', serif, ;
+    font-family: 'Playfair Display';
+    margin: 0;
+    background-color: rgb(236, 233, 233);
 }
 
 /* Header */
-h1 {
-  color: red;
-  background-color: blue;
-  display: flex;
+.menu{
+    background-color: rgb(151, 33, 33);
+    text-align: center;
+}
 
+.menu-name{
+    margin: 0;
+    padding: 10% 0;
+    
+    font-size: 68px;
+    color: rgb(236, 233, 233);
+}
+
+.menu-links{
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10%;
+
+    list-style-type: none;
+}
+
+.menu-links-option{
+    flex: 0 0 33%;
+
+    list-style: none;
+    
+    font-size: 32px;
+    font-weight: 600;
+    color: rgb(236, 233, 233);
+}
+
+.menu-links-option a{
+    text-decoration: none;
+    color: rgb(255, 174, 0);
 }
 
 /* Main */
+.principal-enter{
+    margin: 0 auto;
+    width: 50%;
+}
+
+.principal-enter-paragraph{
+    margin: 0;
+    padding: 25% 0;
+
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 75px;
+    color: rgb(151, 33, 33);
+}
+
 
 /* Footer */
+
+footer{
+    background-color: rgb(151, 33, 33);;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+
+footer p{
+    color: rgb(236, 233, 233);
+    margin: 0;
+}
