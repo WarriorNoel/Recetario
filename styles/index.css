@@ -1,8 +1,14 @@
+/*Especial*/
+body{
+    font-family: 'Playfair Display', serif;
+}
+
 /* Header */
 h1 {
   color: red;
   background-color: blue;
   display: flex;
+
 }
 
 /* Main */
