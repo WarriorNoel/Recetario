@@ -1,9 +1,54 @@
 body {
     font-family: 'Playfair Display';
+    margin: 0;
     background-color: rgb(236, 233, 233);
 }
 
+/* Header */
+.menu{
+    background-color: rgb(151, 33, 33);
+    text-align: center;
+}
+
+.menu-name{
+    margin: 0;
+    padding: 10% 0;
+    
+    font-size: 68px;
+    color: rgb(236, 233, 233);
+}
+
+.menu-links{
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10%;
+
+    list-style-type: none;
+}
+
+.menu-links-option{
+    flex: 0 0 33%;
+
+    list-style: none;
+    
+    font-size: 32px;
+    font-weight: 600;
+    color: rgb(236, 233, 233);
+}
+
+.menu-links-option a{
+    text-decoration: none;
+    color: rgb(255, 174, 0);
+}
+
 /* Main */
+a {
+    text-decoration: none;
+}
+
 .recipes-parent {
     display: flex;
     flex-wrap: wrap;
@@ -11,8 +56,8 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    row-gap: 30px;
-    column-gap: 20px;
+    row-gap: 50px;
+    column-gap: 50px;
 }
 
 .recipes-child {
@@ -24,27 +69,53 @@ body {
     height: auto;
     margin: 0;
     padding: 0;
-}
-
-a {
-    text-decoration: none;
+    position: relative;
+    transition: all .5s ease-in-out;
 }
 
 .recipes-child ul {
     margin-top: 20px;
     margin-bottom: 0;
     padding: 0;
-    font-size: 26px;
-    color: rgb(151, 33, 33);
-    text-shadow: 2px 2px 10px rgba(151, 33, 33);
+    font-size: 36px;
+    font-weight: bold;
+    color: white !important;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .recipes-child img {
     width: 100%;
     height: auto;
-    border-radius: 5%;
 }
 
 .recipes-child:nth-child(-n+3) {
-    margin-top: 20px;
+    margin-top: 50px;
+}
+
+.recipes-child:hover {
+    transform: scale(1.2);
+    transition: all .5s ease-in-out;
+    z-index: 1;
+}
+
+.recipes-child:not(:hover) {
+    transform: scale(1);
+    transition: .5s ease-in-out;
+}
+
+.recipes-child:hover img {
+    filter: brightness(70%) blur(1px);
+}
+
+.recipes-child:hover ul {
+    transform: scale(1.2) translate(-40%, -40%);
+    transition: all .5s ease-in-out;
+}
+
+.recipes-child:not(hover) ul {
+    transform: scale(1) translate(-40%, -50%);
+    transition: all .5s ease-in-out;
 }
