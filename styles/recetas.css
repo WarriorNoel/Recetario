@@ -58,12 +58,13 @@ a {
     text-align: center;
     row-gap: 50px;
     column-gap: 50px;
+
+    width: 100%;
 }
 
 .recipes-child {
     list-style: none;
-    flex: 0 0 30%;
-    font-size: 18px;
+    flex: 0 0 28%;
     
     width: 100%;
     height: auto;
@@ -74,14 +75,12 @@ a {
 }
 
 .recipes-child ul {
-    margin-top: 20px;
-    margin-bottom: 0;
     padding: 0;
-    font-size: 36px;
-    font-weight: bold;
+    font-size: 28px;
     color: white !important;
+    text-shadow: 0 5px 10px rgb(0, 0, 0);
     position: absolute;
-    top: 40%;
+    top: 34%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -89,10 +88,20 @@ a {
 .recipes-child img {
     width: 100%;
     height: auto;
+    filter: brightness(85%);
 }
 
 .recipes-child:nth-child(-n+3) {
     margin-top: 50px;
+}
+
+.recipes-child:nth-child(1),
+.recipes-child:nth-child(4) {
+    padding-left: 20px;
+}
+.recipes-child:nth-child(3),
+.recipes-child:nth-child(6) {
+    padding-right: 20px;
 }
 
 .recipes-child:hover {
@@ -111,11 +120,11 @@ a {
 }
 
 .recipes-child:hover ul {
-    transform: scale(1.2) translate(-40%, -40%);
+    transform: scale(1.3) translate(-40%, -40%);
     transition: all .5s ease-in-out;
 }
 
 .recipes-child:not(hover) ul {
-    transform: scale(1) translate(-40%, -50%);
+    transform: scale(1) translate(-48%, -50%);
     transition: all .5s ease-in-out;
 }
