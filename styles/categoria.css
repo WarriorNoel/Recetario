@@ -46,3 +46,46 @@ body {
     text-decoration: none;
     color: rgb(255, 174, 0);
 }
+
+/* Main */
+.back-button {
+    display: inline-block;
+}
+
+@keyframes breathing {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+.back-button div{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    padding: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(255, 174, 0);
+    background-color: rgb(114, 34, 34);
+    box-shadow: 2px 2px 10px gray;
+    transition: all 0.2s ease-in-out;
+    animation: breathing 7s ease-in-out infinite;
+}
+  
+.back-button:hover div{
+    transform: translateY(-2px);
+    box-shadow: 2px 0 10px lightblue;
+}
+  
+  
