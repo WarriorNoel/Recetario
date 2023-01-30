@@ -1,0 +1,48 @@
+body {
+    font-family: 'Playfair Display';
+    margin: 0;
+    background-color: rgb(236, 233, 233);
+}
+
+/* Header */
+.menu{
+    background-color: rgb(151, 33, 33);
+    text-align: center;
+    box-shadow: 0 20px 150px rgba(0, 0, 0, 0.9);
+}
+
+.menu-name{
+    margin: 0;
+    padding: 2% 0 5% 0;
+    
+    font-size: 68px;
+    color: rgb(236, 233, 233);
+}
+
+.menu-links{
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 0;
+    padding: 0;
+    padding-bottom: 5%;
+
+    list-style-type: none;
+}
+
+.menu-links-option{
+    flex: 0 0 33%;
+
+    list-style: none;
+    
+    font-size: 32px;
+    font-weight: 600;
+    color: rgb(236, 233, 233);
+}
+
+.menu-links-option a{
+    text-decoration: none;
+    color: rgb(255, 174, 0);
+}
